@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   images: {
+    domains: ['vercel.com'],
     unoptimized: true,
   },
   trailingSlash: true,
@@ -9,7 +9,6 @@ const nextConfig = {
   experimental: {
     turbo: {
       rules: {
-        // Enables the usage of @/ imports
         '@/*': ['./src/*']
       }
     }
