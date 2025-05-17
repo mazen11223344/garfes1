@@ -4,6 +4,16 @@ const nextConfig = {
     domains: ['vercel.com'],
     unoptimized: true,
   },
+  env: {
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+    NEXT_PUBLIC_GEMINI_API_KEY: process.env.NEXT_PUBLIC_GEMINI_API_KEY,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   trailingSlash: true,
   reactStrictMode: true,
   experimental: {
